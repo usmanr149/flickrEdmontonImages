@@ -45934,7 +45934,7 @@ var photos = [
 
 var photoLayer = L.photo.cluster({ spiderfyDistanceMultiplier: 1.2 }).on('click', function(evt) {
   var photo = evt.layer.photo;
-  var template = '<img src="{url}" width="200" height="200"/></a><p>{name}</p><p>Click <a href="{url}">here</a> to go source.</p>';
+  var template = '<img src="{url}" width="200" height="200"/></a><p>{name}</p><p>Click <a href="{url}" target="_blank">here</a> to go source.</p>';
 
   evt.layer.bindPopup(L.Util.template(template, photo), {
     minWidth: 200
