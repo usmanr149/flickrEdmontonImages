@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- saved from url=(0062)http://turban.github.io/Leaflet.Photo/examples/norvegiana.html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Leaflet Norvegiana</title>
+	<title>BIA Pictures From Flickr</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta property="og:image" content="route.png">
@@ -45934,7 +45934,7 @@ var photos = [
 
 var photoLayer = L.photo.cluster({ spiderfyDistanceMultiplier: 1.2 }).on('click', function(evt) {
   var photo = evt.layer.photo;
-  var template = '<img src="{url}" width="200" height="200"/></a><p>{name}</p>';
+  var template = '<img src="{url}" width="200" height="200"/></a><p>{name}</p><p>Click <a href="{url}">here</a> to go source.</p>';
 
   evt.layer.bindPopup(L.Util.template(template, photo), {
     minWidth: 200
