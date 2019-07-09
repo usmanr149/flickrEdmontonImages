@@ -67,7 +67,8 @@ var zoomLevel = 12;
 // initialize map
 var map = L.map('map').setView(coords, zoomLevel);
 
-var geojsonLayer = new L.GeoJSON.AJAX("Business Improvement Areas.geojson");
+var geojsonLayer = new L.GeoJSON.AJAX("./Leaflet Norvegiana_files/Business Improvement Areas.geojson");
+<!--var geojsonLayer = new L.GeoJSON.AJAX("https://github.com/usmanr149/flickrEdmontonImages/blob/master/Business%20Improvement%20Areas.geojson");-->
 geojsonLayer.addTo(map);
 
 // set source for map tiles
